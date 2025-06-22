@@ -1,2 +1,2 @@
-# python_full
-Pythonado
+# Estudos em Python
+Dir onde estou estudando python
