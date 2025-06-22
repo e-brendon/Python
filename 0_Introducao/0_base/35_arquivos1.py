@@ -1,4 +1,4 @@
-arquivo = open('./mod-1_introducao/0_base/arquivos/aula63.txt', 'a')
+arquivo = open('./0_introducao/0_base/arquivos/aula63.txt', 'a')
 
 i = 0
 
@@ -11,7 +11,11 @@ while True:
     i += 1
     
 
-arquivo_opn = open('./mod-1_introducao/0_base/arquivos/aula63.txt', 'r')
+arquivo_opn = open('./0_introducao/0_base/arquivos/aula63.txt', 'r')
 leitura = arquivo_opn.read()
 
 print (leitura)
+
+arquivo.close()
+arquivo_opn.close()
+
