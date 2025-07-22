@@ -9,11 +9,18 @@ class Pessoas:
         
     def retorna_nome(self):
         return self.nome
+    
     def loga_sistema(self):
         print(f"{self.retorna_nome()} está logado no sistema.")
+    
+    @classmethod
+    def andar(cls):
+        cls.pernas = 2
+        return None
         
 p1 = Pessoas('João', 30)
 p2 = Pessoas('Maria', 25)
 
-print(f"Nome: {p1.nome}, Idade: {p1.idade}, Raça: {p1.raca}")
-
+print (Pessoas.possui_boca)
+Pessoas.andar()
+print (Pessoas.pernas)
