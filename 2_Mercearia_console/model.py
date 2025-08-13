@@ -16,11 +16,13 @@ class Estoque:
         self.quantidade = quantidade
         
 class Venda:
-    def __init__(self, itensVendidos: Produtos, vendedor, comprador, quantidadeVendida, data = datetime.now()):
+    def __init__(self, itensVendidos: Produtos, vendedor, comprador, quantidadeVendida, data=None):
+        if data is None:
+            data = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
         self.itensVendidos = itensVendidos
         self.vendedor = vendedor
         self.comprador = comprador
-        self.quantidadeVendidas = quantidadeVendida
+        self.quantidadeVendida = quantidadeVendida
         self.data = data
         
 class Fornecedor:
