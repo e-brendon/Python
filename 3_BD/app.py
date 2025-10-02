@@ -10,3 +10,4 @@ cursor.execute ('''
                     name TEXT NOT NULL,
                     born_date TEXT
 )''')
+conexao.close()
